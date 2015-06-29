@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:orientation="vertical" >
+            <LinearLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:focusable="true" 
+                android:clickable="true"
+                android:background="@drawable/table_above_bg">
+                <TextView 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginLeft="10.0dip" 
+                    android:duplicateParentState="true"
+                    android:textStyle="bold" 
+                    android:text="SIM卡编号：" />
+                <TextView 
+                    android:id="@+id/edit_card_name_i"  
+                    android:layout_height="wrap_content" 
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10.0dip" 
+                    android:duplicateParentState="true"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/user_info_followers_ll"  
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:focusable="true" 
+                android:clickable="true"
+                android:background="@drawable/table_mid_bg">
+                <TextView 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginLeft="10.0dip" 
+                    android:duplicateParentState="true"
+                    android:textStyle="bold" 
+                    android:text="电话号码：" />
+                <TextView 
+                    android:id="@+id/edit_card_number_i"  
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginRight="10.0dip" 
+                    android:duplicateParentState="true"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/user_info_fans_ll"  
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:focusable="true" 
+                android:clickable="true"
+                android:background="@drawable/table_mid_bg">
+                <TextView 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginLeft="10.0dip" 
+                    android:duplicateParentState="true"
+                    android:textStyle="bold"
+                    android:text="运营商：" />
+                <TextView 
+                    android:id="@+id/card_operator_i"  
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_marginRight="10.0dip" 
+                    android:duplicateParentState="true"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/user_info_fans_ll"  
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:focusable="true" 
+                android:clickable="true"
+                android:background="@drawable/table_below_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textStyle="bold"
+                    android:text="Owner：" />
+                    <RadioGroup
+                        android:id="@+id/owner_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:orientation="horizontal">
+                
+                        <RadioButton
+                            android:id="@+id/radio_inner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="组内"
+                            android:checked="true" />
+                
+                        <RadioButton
+                            android:id="@+id/radio_outter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="组外" />
+                    </RadioGroup>
+            </LinearLayout>
+    </LinearLayout>
+    <EditText
+            android:id="@+id/owner_other"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:singleLine="true" />
+    <Spinner
+        android:id="@+id/card_owner"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/light_yellow"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/make_sure"
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/add_bt"
+        android:text="@string/change" />
+
+
+    <Button
+        android:id="@+id/return_card"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/return_bt"
+        android:text="@string/giveback" />
+
+        <Button
+        android:id="@+id/delete_card"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:text="@string/delete" />
+        
+</LinearLayout>

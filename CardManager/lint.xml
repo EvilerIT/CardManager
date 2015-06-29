@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ParserError" severity="ignore">
+        <ignore path="src\com\ril\cardmanager\EditCard.java" />
+    </issue>
+    <issue id="SdCardPath" severity="ignore" />
+    <issue id="UseValueOf">
+        <ignore path="src\com\ril\cardmanager\Leading\XmlLeaddingIn.java" />
+    </issue>
+</lint>

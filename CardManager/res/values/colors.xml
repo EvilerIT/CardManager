@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="yellow_click">#FFC125</color>
+    <color name="yellow_normal">#FF7F00</color>
+    <color name="red_click">#B22222</color>
+    <color name="red_normal">#EE2C2C</color>
+    <color name="green_click">#006400</color>
+    <color name="green_normal">#00EE00</color>
+    <color name="light_gray">#B8B8B8</color>
+    <color name="light_yellow">#EED8AE</color>
+    <color name="blue_normal">#8a2be2</color>
+
+</resources>
